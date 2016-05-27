@@ -1,13 +1,14 @@
 var getRepos = require('./../js/gitHubApi.js').getRepos;
 
-var apiKey = require('./../apiKey.env').apiKey;
+var apiKey = require('./../.env').apiKey;
 
 
 $(document).ready(function() {
   $('#searchBtn').click(function() {
     var gitHubUser = $('#gitHubUser').val();
-    // $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey).then(function(response) {
-    //   $('.showGitHubUser').text("The humidity in " + city + " is " + response.main.humidity + "%");
+    getRepos();
+    // $.get('https://api.github.com/users/daneden').then(function(response) {
+    //   $('.showGitHubUser').text( response );
     // }).fail(function(error) {
     //   $('.showGitHubUser').text(error.responseJSON.message);
     // });
