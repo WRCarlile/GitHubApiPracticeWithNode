@@ -1,13 +1,19 @@
-var getRepos = require('./../js/gitHubApi.js').getRepos;
-var getUserName = require('./../js/gitHubApi.js').getUserName;
+var GitHubApiCall = require('./../js/gitHubApi.js').GitHubApiCall;
 var apiKey = require('./../.env').apiKey;
+var getRepos = require('./../js/gitHubApi.js').getRepos;
 
+var displayUserName = function(gitHubUserName, apiCallBackName) {
+  $('.showGitHubUser').text("The GitHub Users name is: " + apiCallBackName);
+};
 
 $(document).ready(function() {
-  $('#searchBtn').click(function() {
-    var gitHubUser = $('#gitHubUser').val();
-    getRepos();
-    getUserName();
+  var newGitHubApiObject= new GitHubApiCall();
+  $('#searchBtn').submit(function() {
+    event.preventDefault();
+    var gitHubUserName = $('#gitHubUser').val();
+    newGitHubApiObject.getUserName(gitHubUserName, displayUserName);
+
+
 
     // $.get('https://api.github.com/users/daneden?access_token=' + api ).then(function(response) {
     //   $('.showGitHubUser').text( response );
