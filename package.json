@@ -1,8 +1,8 @@
 {
-  "name": "weather",
+  "name": "GitHubApi",
   "version": "1.0.0",
-  "description": "weather app",
-  "main": "weather-interface.js",
+  "description": "practice with GitHub Api",
+  "main": "github-interface.js",
   "scripts": {
     "test": "test"
   },
@@ -27,6 +27,8 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "jshint": "^2.9.2",
     "vinyl-source-stream": "^1.1.0"
