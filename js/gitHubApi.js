@@ -10,7 +10,7 @@ exports.getRepos = function(){
 
 exports.getUserName = function(){
   $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-    console.log(response.company);
+    console.log(response.login);
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
