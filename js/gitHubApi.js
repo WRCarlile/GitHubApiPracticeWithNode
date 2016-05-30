@@ -15,6 +15,7 @@ exports.getRepos = function(){
 exports.GitHubApiCall.prototype.getUserName = function(gitHubUserName){
 
   $.get('https://api.github.com/users/' + gitHubUserName + '/repos' + '?access_token=' + apiKey).then(function(response){
+    $('.showGitHubUser').text(response.login);
 
     for(i = 0; i < response.length; i++) {
       if (response[i].description === "") {
