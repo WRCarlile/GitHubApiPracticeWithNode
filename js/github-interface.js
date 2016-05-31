@@ -13,16 +13,7 @@ $(document).ready(function() {
   $('#searchBtn').submit(function() {
     event.preventDefault();
     var gitHubUserName = $('#gitHubUser').val();
-    newGitHubApiObject.getUserName(gitHubUserName);
-
-    getRepos();
-
-
-
-    // $.get('https://api.github.com/users/daneden?access_token=' + api ).then(function(response) {
-    //   $('.showGitHubUser').text( response );
-    // }).fail(function(error) {
-    //   $('.showGitHubUser').text(error.responseJSON.message);
-    // });
+    newGitHubApiObject.getAvatar(gitHubUserName);
+    newGitHubApiObject.getUserInfo(gitHubUserName);
   });
 });

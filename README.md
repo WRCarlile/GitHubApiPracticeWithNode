@@ -35,7 +35,7 @@ _To contact, leave a comment on Github._
 ## Technologies Used
 
 * _JavaScript_
-* _Node_
+* _Node.js_
 * _Gulp_
 * _Bower_
 * _GitHub Api_
