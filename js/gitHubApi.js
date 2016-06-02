@@ -5,8 +5,8 @@ exports.GitHubApiCall = function() {
 
 exports.GitHubApiCall.prototype.getAvatar = function(gitHubUserName){
   $.get('https://api.github.com/users/' + 'gitHubUserName' + '?access_token=' + apiKey).then(function(response){
-  $('.showGitHubUser').append('<p>'  + gitHubUserName +  '</p>');
-  $('.showGitHubUser').append('<img src= ' + '"' + response.avatar_url +  '"' + '>');
+    $('.showGitHubUser').append('<p>'  + gitHubUserName +  '</p>');
+    $('.showGitHubUser').append('<img src= ' + '"' + response.avatar_url +  '"' + '>');
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
