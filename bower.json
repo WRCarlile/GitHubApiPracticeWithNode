@@ -1,5 +1,5 @@
 {
-  "name": "GitHubApi",
+  "name": "git-hub-api",
   "description": "practice with GitHub Api",
   "main": "github-interface.js",
   "license": "MIT",

@@ -8,8 +8,20 @@ Practice with the Git Hub Api. Enter a Git Hub user to return their repositories
 ## Setup/Installation Requirements
 
 * _Clone or download the repository_
-* _Add a .env with your api key to the main file directory._  
+* _Add a .env file with your api key to the main file directory._  
+* _Copy this code into your .env file with your api key : exports.apiKey = "Paste your api key here";_
 * _Run these components:_
+```
+$ npm install -g
+```
+```
+$ bower install -g
+```
+```
+$ npm install gulp-sass -g
+```
+* _Navigate to the project folder then run these commands_
+
 ```
 $ npm install
 ```
